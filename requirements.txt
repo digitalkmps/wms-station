@@ -1,0 +1,43 @@
+Adafruit-Blinka==8.47.0
+adafruit-circuitpython-busdevice==5.2.9
+adafruit-circuitpython-connectionmanager==3.1.1
+adafruit-circuitpython-dht==4.0.4
+adafruit-circuitpython-requests==4.1.6
+adafruit-circuitpython-typing==1.11.0
+# Adafruit-DHT==1.4.0
+# Adafruit-PlatformDetect==3.74.0
+# Adafruit-PureIO==1.1.11
+binho-host-adapter==0.1.6
+board==1.0
+certifi==2022.9.24
+chardet==5.1.0
+charset-normalizer==3.0.1
+colorzero==2.0
+distlib==0.3.6
+distro==1.8.0
+filelock==3.9.0
+gpiozero==2.0.1
+idna==3.3
+lgpio==0.2.2.0
+pigpio==1.78
+pipenv==2022.12.19
+platformdirs==2.6.0
+prometheus_client==0.21.0
+pycryptodomex==3.11.0
+pyftdi==0.55.4
+pyserial==3.5
+python-apt==2.6.0
+pyusb==1.2.1
+requests==2.28.1
+RPi.GPIO==0.7.1a4
+rpi_ws281x==5.0.0
+six==1.16.0
+smbus2==0.4.2
+spidev==3.5
+ssh-import-id==5.10
+sysv-ipc==1.1.0
+toml==0.10.2
+typing_extensions==4.12.2
+urllib3==1.26.12
+virtualenv==20.17.1+ds
+virtualenv-clone==0.3.0
