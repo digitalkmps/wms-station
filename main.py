@@ -64,8 +64,11 @@ if __name__ == '__main__':
         light_metric.set(light)
         distance_metric.set(distance)
         headers:dict = {'Content-Type': 'application/json'}
-        r = requests.post(WMS_ADDRESS, headers=headers, json={'eventTime': int(round(datetime.datetime.now().timestamp())), 'temperature': temperature, 'humidity': humidity, 'distance': distance, 'light': light})
-        time.sleep(0.2)
+        r = requests.post(WMS_ADDRESS, headers=headers, json={'eventTime': int(round(datetime.datetime.now().timestamp())), 'temperature': temperature, 'humidity': humidity, 'distance': distance, 'light': True if light == 0 else False})
+        r.raise_for_status()
+        print(r.text)
+    except requests.exceptions.HTTPError as e:
+        print (e.response.text)
     except RuntimeError as error:
         print(error.args[0])
         time.sleep(2.0)
